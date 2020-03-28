@@ -1,0 +1,42 @@
+.sidenav li a {
+  color: #08f061;
+}
+
+.contact-ham a {
+  background: #08f061;
+}
+
+.logo h2 {
+  color: #08f061;
+}
+
+.menu li a:hover {
+  color: #08f061;
+}
+
+.menu-search a {
+  background: #08f061;
+}
+
+.text1 a:hover {
+  background: #08f061;
+}
+
+.box h5 {
+  color: #08f061;
+}
+
+.box-a a:hover {
+  background: #08f061;
+}
+
+.textarea button {
+  background: #08f061;
+}
+
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+/*# sourceMappingURL=sass_style.css.map */

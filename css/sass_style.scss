@@ -1,0 +1,67 @@
+$color: rgb(8, 240, 97);
+
+.sidenav {
+	li {
+		a {
+			color: $color;
+		}
+	}
+}
+.contact-ham {
+	a {
+		background: $color;
+	}
+}
+.logo {
+	h2 {
+		color: $color;
+	}
+}
+.menu {
+	li {
+		a {
+			&:hover {
+				color: $color;
+			}
+		}
+	}
+}
+.menu-search {
+	a {
+		background: $color;
+	}
+}
+.text1 {
+	a {
+		&:hover {
+			background: $color;
+		}
+	}
+}
+.box {
+	h5 {
+		color: $color;
+	}
+}
+.box-a {
+	a {
+		&:hover {
+			background: $color;
+		}
+	}
+}
+.textarea {
+	button {
+		background: $color;
+	}
+}
+
+%clearf{
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.clearfix{
+    @extend %clearf;
+}

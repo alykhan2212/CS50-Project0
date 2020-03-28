@@ -1,0 +1,840 @@
+body{
+    margin: 0px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main {
+    width:100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hamburger {
+    position: absolute;
+    width: 35px;
+    cursor: pointer;
+    z-index: 999;
+    top: 28px;
+    left: 30px;
+    display: none;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.hambar {
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+.toggled-ham .hambar:first-child {
+    -webkit-transform: rotate(45deg) translate(2px, 11px);
+        -ms-transform: rotate(45deg) translate(2px, 11px);
+            transform: rotate(45deg) translate(2px, 11px);
+}
+.toggled-ham .ham-mid {
+    opacity: 0;
+}
+.toggled-ham .hambar:last-child {
+    -webkit-transform: rotate(-45deg) translate(0px, -10px);
+        -ms-transform: rotate(-45deg) translate(0px, -10px);
+            transform: rotate(-45deg) translate(0px, -10px);
+}
+.hambar {
+    width: 100%;
+    height: 4px;
+    background: rgb(255, 255, 255);
+}
+.toggled-ham {
+    -webkit-transform: translate(-20px, -18px) scale(0.6);
+        -ms-transform: translate(-20px, -18px) scale(0.6);
+            transform: translate(-20px, -18px) scale(0.6);
+}
+.ham-mid {
+    margin: 4px 0;
+}
+.sidenav {
+    position: fixed;
+    width: 35%;
+    top: 0px;
+    left: 0;
+    background: #000;
+    -webkit-box-shadow: -7px 1px 15px 4px;
+    box-shadow: -7px 1px 15px 4px;
+    padding: 10px 0px;
+    z-index: 9;
+    list-style: none;
+    text-align: center;
+    height: 100vh;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: translate(-105%, 0%);
+        -ms-transform: translate(-105%, 0%);
+            transform: translate(-105%, 0%);
+}
+.toggled-nav {
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+}
+.sidenav li a {
+    display: block;
+    text-transform: capitalize;
+    font-family: arial;
+    text-decoration: none;
+    padding: 5px 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.sidenav li a:hover {
+    background:white;
+    color:black;
+}
+.contact-ham a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    font-family: arial;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.contact-ham a i {
+    margin-right: 8px;
+}
+.header {
+    background:rgb(0, 0, 0);
+    padding: 20px;
+}
+.clr {
+    clear: both;
+}
+.logo {
+    float: left;
+    font-size: 10px;
+}
+.logo h1 {
+    margin: 0px;
+    font-family: arial;
+    text-transform: uppercase;
+    color: white;
+}
+.logo h2{
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: arial;
+}
+.menu {
+    float: left;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.menu ul{
+    float: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    text-decoration: none;
+    padding: 0 20px;
+    font-family: arial;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color:white;
+}
+.menu-search {
+    float: right;
+}
+.menu-search a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px 10px 20px;
+    font-family: arial;
+    font-weight: 600;
+    display: block;
+}
+.menu-search i {
+    margin-right: 10px;
+}
+.banner {
+    padding: 300px 0px;
+}
+.banner-text {
+    margin: 0 auto;
+    width: 670px;
+    padding: 40px 0px;
+    background: rgba(0,0,0,0.8);
+}
+.banner-text h1 {
+    color: #fff;
+    text-align: center;
+    font-family: arial;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.text1 {
+    text-align: center;
+    padding-bottom: 56px;
+}
+.text-about{
+    text-align: justify;
+    padding-bottom: 56px;
+}
+.text1 h1 {
+    padding-top: 50px;
+    font-family: arial;
+    text-transform: uppercase;
+}
+.text1 p {
+    font-family: arial;
+    font-size: 17px;
+    text-transform: capitalize;
+    line-height: 24px;
+    padding-top: 13px;
+}
+.text1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;
+    border-radius: 30px;
+    padding: 10px 40px 10px 40px;
+    display: inline-block;
+    margin-top: 10px;
+    font-family: arial;
+    font-weight: 800;
+    font-size: 12px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.text1 i {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: sub;
+}
+.text1 a:hover {
+    color:black;
+}
+.main-box {
+    background: url(../image/cover.jpg) center center / cover no-repeat;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hh1 h1{
+    text-align: center;
+    font-family: arial;
+    text-transform: capitalize;
+    color: #fff;
+}
+.box {
+    float: left;
+    padding-top: 30px;
+    width: 24%;
+    margin: 0 5px;
+}
+.box img {
+    width: 100%;
+}
+.box h3 {
+    margin: 0px;
+    font-family: arial;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.box h5 {
+    margin: 0px;
+    font-family: arial;
+    text-transform: capitalize;
+    margin-top: 4px;
+}
+.box p {
+    margin: 0px;
+    margin-top: 10px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: arial;
+    font-size: 10px;
+}
+.box-a {
+    text-align: center;
+}
+.box-a a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: arial;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 40px 10px 40px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-top: 40px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.box-a i {
+    margin-left: 10px;
+    font-size: 22px;
+    vertical-align: sub;
+    font-weight: bold;
+}
+.box-a a:hover {
+    color:black;
+}
+.box-left {
+    float: left;
+    width: 50%;
+    margin: 30px 0px 30px 0;
+}
+.box-contacts {
+    border-bottom: 1px solid #a1a1a1;
+    margin-bottom: 30px;
+}
+.box-contacts h1 {
+    float: left;
+    margin-bottom: 10px;
+    font-family: arial;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+.box-contacts a {
+    float: right;
+    display: inline-block;
+    margin-top: 7px;
+    font-family: arial;
+    text-transform: capitalize;
+    color:black;
+}
+.box-right {
+    float: left;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+.box-right img {
+    float: left;
+    max-width: 25%;
+    width: 100%;
+}
+.hh8 {
+    width: 75%;
+    float: right;
+}
+.hh8 h3 {
+    float: left;
+    width: 336px;
+    padding: 5px 20px;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:black;
+}
+.hh8  h5 {
+    float: left;
+    padding: 0 20px;
+    font-family: arial;
+    text-transform: capitalize;
+    color: #696969;
+}
+.hh8 p {
+    float: left;
+    padding: 0px 18px;
+    margin-top: 10px;
+    color: #696969;
+    font-family: arial;
+}
+.box-right a {
+    float: left;
+    padding: 0 17px;
+    text-transform: capitalize;
+    font-family: arial;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    color:gray;
+    font-weight: 600;
+}
+.box-text {
+    float: right;
+    width: 48%;
+    margin: 37px 0px 30px 0;
+}
+.box-1 {
+    border-bottom: 1px solid #a1a1a1;
+    margin-bottom: 30px;
+}
+.box-1 h1 {
+    font-family: arial;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 9px;
+}
+.box-text p {
+    text-transform: capitalize;
+    margin-top: 9px;
+    font-family: arial;
+    font-size: 15px;
+    line-height: 22px;
+    color: #515151;
+}
+.footer {
+    background: #030303;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+.fbox:first-child {
+    margin: 0px;
+}
+.fbox {
+    float: left;
+    width: 31%;
+    margin-left: 3.5%;
+    padding-bottom: 12px;
+}
+.fbox img {
+    float: left;
+    padding-right: 10px;
+    width: 100px;
+}
+.fbox-top{
+    margin-bottom: 30px;
+}
+.fbox h4 {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0px 0px;
+    font-family: arial;
+    float: left;
+    font-size: 30px;
+}
+.fbox h4 span{
+    font-family: arial;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+}
+.fbox p {
+    font-family: arial;
+    color: #6a6868;
+    line-height: 23px;
+    font-size: 15px;
+}
+.fbox h5 {
+    float: left;
+    padding-top: 11px;
+    font-family: arial;
+    color: #6a6868;
+}
+.fbox1:nth-child(2) {
+    border-bottom: 2px solid #636363;
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 15px 0px;
+}
+.fbox1 a {
+    float: right;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: arial;
+    color:  rgb(179, 179, 179);
+    display: inline-block;
+    margin-top: 10px;
+}
+.fbox h1 {
+    color: #fff;
+    font-family: arial;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin-bottom: 30px
+}
+.fbox input {
+    padding: 15px 0px 15px 10px;
+    margin-bottom: 8px;
+    background: #111111;
+    color: #3a3a3a;
+    border: 2px solid #636363;
+    text-transform: capitalize;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: arial;
+    font-weight: 600;
+}
+.textarea {
+    background: #111111;
+    border: 2px solid #636363;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.textarea textarea {
+    padding: 15px 0px 0px 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    color: #3a3a3a;
+    text-transform: capitalize;
+    border: none;
+    background: none;
+    height: 98px;
+}
+.textarea button {
+    float: right;
+    margin: 0 10px 10px 0px;
+    padding: 10px 33px 10px 33px;
+    font-family: arial;
+    border: 1px solid white;
+    color: #000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.footer-bottom {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #fff;
+    margin-top: 25px;
+}
+.copy {
+    color: #fff;
+    padding: 10px 10px;
+}
+.copy p {
+    font-family: arial;
+    text-transform: capitalize;
+    float: left;
+    padding: 12px 0px;
+}
+.copy-search {
+    float: right;
+    width: 15%;
+    margin-top: 6px;
+}
+.copy-search a.fa-google-plus{
+    background: #f62625;
+}
+.copy-search a.fa-youtube-play{
+    background: #f16261;
+}
+.copy-search a.fa-linkedin{
+    background: #90cadd;
+}
+.copy-search a.fa-twitter{
+    background: #63cdf1;
+}
+.copy-search a {
+    border-radius: 100%;
+    text-decoration: none;
+    color: #000;
+    background: #FFF;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    line-height: 33px;
+    max-width: 32px;
+}
+@media (max-width:1200px){
+    .box {
+        width: 23%;
+        margin: 0 10px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+}
+@media (max-width:1024px){
+    .main {
+        max-width: 970px;
+    }
+    .text1 p {
+        font-size: 16px;
+    }
+    .box p {
+        font-size: 12px;
+    }
+    .box {
+        width: 23%;
+        margin: 0 9px;
+    }
+    .box-text p {
+        font-size: 14px;
+    }
+    .box-right h3 {
+        width: initial;
+        padding: 5px 20px;
+    }
+    .box-right h5 {
+        padding: 0 20px;
+    }
+    .box-right p {
+        padding: 0px 0px 0px 18px;
+    }
+}
+@media (max-width:768px){
+    .main {
+        padding: 0 10px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-search {
+        display: none;
+    }
+    .box {
+        width: 100%;
+        margin: 0 0px;
+    }
+    .logo {
+        text-align: center;
+        float: none;
+    }
+    .box h3 {
+        font-size: 42px;
+        text-align: center;
+    }
+    .box h5 {
+        font-size: 37px;
+        text-align: center;
+    }
+    .box p {
+        font-size: 25px;
+        text-align: center;
+    }
+    .box-text img {
+        width: 100%;
+    }
+    .box-left {
+        width: 100%;
+    }
+    .fbox {
+        float: none;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .box-text {
+        width: 100%;
+    }
+    .text1 p {
+        font-size: 12px;
+    }
+    .box-right h3 {
+        width: initial;
+        padding: 5px 18px;
+    }
+    .box-text p {
+        font-size: 22px;
+    }
+    .hh1 h1 {
+        font-size: 40px;
+    }
+    .copy-search {
+        width: 20%;
+    }
+    .fbox p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+    @media (max-width:736px){
+        .copy-search {
+            width: 21%;
+        }
+        .fbox {
+            float: none;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+    @media (max-width:414px){
+        .banner-text h1 {
+            line-height: 48px;
+            padding-right: 220px;
+            font-size: 27px;
+        }
+        .text1 p {
+            font-size: 10px;
+            line-height: 15px;
+        }
+        .hh1 h1 {
+            font-size: 28px;
+        }
+        .box h3 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .banner {
+            padding: 160px 0px;
+        }
+        .banner-text h1 {
+            line-height: 34px;
+            padding-right: 250px;
+            font-size: 17px;
+        }
+        .box p {
+            font-size: 13px;
+            text-align: center;
+        }
+        .box-right p {
+            font-size: 12px;
+        }
+        .box-text p {
+            font-size: 12px;
+        }
+        .fbox {
+            float: none;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .fbox h5 {
+            padding-top: 11px;
+            font-size: 9px;
+        }
+        .fbox h4 { 
+            font-size: 17px;
+        }
+        .fbox h4 span {
+            font-size: 8px;
+        }
+        .text1 h1 {
+            font-size: 15px;
+        }
+        .fbox1 a {
+            margin-top: 10px;
+            font-size: 9px;
+        }
+        .fbox p {
+            font-size: 11px;
+            line-height: 16px;
+        }
+        .copy-search {
+            width: 38%;
+        }
+        .copy p { 
+            font-size: 10px;
+        }
+        .fbox input {
+            font-size: 9px;
+        }
+        .fbox img {
+            float: left;
+            padding-right: 5px;
+            width: 30px;
+        }
+    
+    }
+    @media (max-width:375px){
+        .box-text p {
+            font-size: 10px;
+        }
+        .fbox img {
+            float: left;
+            padding-right: 5px;
+            width: 17px;
+        }
+        .banner {
+            padding: 160px 0px;
+        }
+        .box h3 {
+            font-size: 20px;
+            text-align: center;
+        }
+        .box h5 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .box p {
+            font-size: 13px;
+            text-align: center;
+        }
+        .banner-text h1 {
+            line-height: 34px;
+            padding-right: 250px;
+            font-size: 17px;
+        }
+        .text1 h1 {
+            font-size: 15px;
+        }
+        .hh1 h1 {
+            font-size: 19px;
+        }
+        .fbox h4 {
+            font-size: 11px;
+        }
+        .fbox h4 span {
+            font-size: 5px;
+        }
+        .fbox {
+            float: none;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .fbox h1 {
+            font-size: 11px;
+        }
+        .fbox p {
+            font-size: 8px;
+            line-height: 16px;
+        }
+        .fbox h5 {
+            padding-top: 11px;
+            font-size: 8px;
+        }
+        .copy p {
+            font-size: 9px;
+            margin-top: 7px;
+        }
+        .copy-search {
+            width: 42%;
+        }
+        .contact-ham a {
+            font-size: 13px;
+        }
+    }
+    @media (max-width:320px){
+        .banner-text h1 {
+            float: left;
+            width: 49%;
+        }
+        .text1 p {
+            font-size: 9px;
+        }
+        .box-right h3 {
+            font-size: 14px;
+        }
+        .box-text p {
+            font-size: 9px;
+        }
+        .copy p {
+            font-size: 7px;
+            margin-top: 7px;
+        }
+        .copy-search {
+            width: 50%;
+        }
+    }    
+}
+}
